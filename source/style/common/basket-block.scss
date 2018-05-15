@@ -1,0 +1,43 @@
+.basket-block {
+	position: relative;
+	z-index: 2;
+	font-size: 16px;
+	font-family: $mediumFont;
+	display: flex;
+	padding: 0 15px;
+	cursor: pointer;
+	.fa {
+		color: $accentColor;
+		margin-right: 9px;
+	}
+	&:hover {
+		text-decoration: none;
+		.basket-block__text {
+			border-bottom: 2px dotted transparent;
+		}
+	}
+	@media (max-width: 1200px) {
+		padding: 0 10px;
+	}
+	@media (max-width: 960px) {
+		font-size: 18px;
+		margin-right: 20px;
+	}
+	@media (max-width: 700px) {
+		display: flex;
+		width: 100%;
+	}
+}
+
+.basket-block__text {
+	display: block;
+	margin-right: 8px;
+	color: white;
+	padding-bottom: 3px;
+	border-bottom: 2px dotted white;
+	@extend .trs;
+}
+
+.basket-block__count {
+	color: $accentColor;
+}

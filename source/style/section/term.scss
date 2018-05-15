@@ -1,0 +1,82 @@
+.term {
+	padding-top: 145px;
+	background: url(../img/compare/compare__more.jpg) 70% top no-repeat;
+	background-size: cover;
+	height: 1100px;
+	@media (max-width: 960px) {
+		padding-top: 115px;
+		height: 1000px;
+	}
+	@media (max-width: 700px) {
+		height: 700px;
+		background-position: 78% top;
+	}
+	@media (max-width: 480px) {
+		padding-top: 50px;
+	}
+}
+
+.term__title {
+	color: $accentColor;
+	font-size: 105px;
+	text-transform: uppercase;
+	font-family: $boldFont;
+	text-shadow: 0px 2px 10px $accentColor;
+	margin-bottom: 55px;
+	@media (max-width: 960px) {
+		font-size: 90px;
+		margin-bottom: 40px;
+	}
+	@media (max-width: 480px) {
+		margin-bottom: 15px;
+	}
+}
+
+.term__subtitle {
+	font-size: 24px;
+	font-family: $boldFont;
+	display: block;
+	margin-bottom: 45px;
+	@media (max-width: 960px) {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+	@media (max-width: 700px) {
+		color: white;
+	}
+	@media (max-width: 480px) {
+		margin-bottom: 15px;
+	}
+}
+
+.term__descr {
+	font-size: 18px;
+	@media (max-width: 960px) {
+		font-size: 16px;
+	}
+	@media (max-width: 700px) {
+		color: white;
+	}
+}
+
+.term__catalog {
+	text-align: center;
+	margin-bottom: 65px;
+	@media (max-width: 960px) {
+		margin-bottom: 45px;
+	}
+}
+
+.term__text {
+	font-size: 36px;
+	font-family: $blackFont;
+	margin-bottom: 60px;
+	display: block;
+	@media (max-width: 960px) {
+		font-size: 28px;
+		margin-bottom: 40px;
+	}
+}
+.term__link {
+	@extend .company__link;
+}

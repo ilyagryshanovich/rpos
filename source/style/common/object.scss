@@ -1,0 +1,81 @@
+.object {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 25px 0;
+	border-bottom: 1px solid #e5e5e5;
+	&:last-child {
+		border-bottom: none;
+	}
+	@media (max-width: 960px) {
+		padding: 20px 0;
+	}
+	@media (max-width: 700px) {
+		flex-direction: column;
+	}
+}
+
+.object__name {
+	font-size: 16px;
+	font-family: $blackFont;
+	margin-right: auto;
+	margin-left: 40px;
+	@media (max-width: 960px) {
+		margin-left: 30px;
+	}
+	@media (max-width: 700px) {
+		margin: 15px 0;
+	}
+}
+
+.object__counter {
+	margin-right: 270px;
+	@media (max-width: 960px) {
+		margin-right: 150px;
+	}
+	@media (max-width: 700px) {
+		margin: 0;
+		margin-bottom: 15px;
+	}
+}
+
+.object__sum {
+	font-family: $mediumFont;
+	font-size: 16px;
+	@media (max-width: 960px) {
+		font-size: 14px;
+	}
+	@media (max-width: 700px) {
+		font-size: 16px;
+	}
+}
+
+// basket-in
+
+.object__basket-in {
+	display: flex;
+	flex-direction: column;
+	margin-right: auto;
+	margin-left: 20px;
+	.object__basket-in-text {
+		display: block;
+		margin-bottom: 5px;
+		font-size: 16px;
+		font-family: $mediumFont;
+		.fa {
+			color: $accentColor;
+			margin-right: 5px;
+		}
+	}
+	.object__name {
+		margin: 0;
+		text-align: left;
+	}
+	@media(max-width: 960px) {
+		flex-wrap: wrap;
+	}
+	@media(max-width: 700px) {
+		margin: 10px 0;
+		align-items: center;
+	}
+}

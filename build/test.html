@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Тест</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="app/css/foundation.css">
+    <link rel="stylesheet" href="app/css/app.css">
+    <script src="app/js/foundation.js" defer></script>
+    <script src="app/js/app.js" defer></script><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <!-- Начало секции header-->
+    <header class="header wow fadeInDown">
+      <div class="container">
+        <div class="header__top"><a class="header__logo" href="/"><img class="header__img" src="app/img/logo.png" alt="logo"></a>
+          <div class="header__nav">
+            <div class="header__btn"><span class="header__btn-text">Меню</span>
+              <div class="header__btn-humburger"><span></span></div>
+            </div>
+            <div class="header__list">
+              <nav class="menu">
+                <ul class="menu__list">
+                  <li class="menu__item"><a class="menu__link" href="#">Каталог обогревателей</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Доставка и оплата</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Сотрудничество</a></li>
+                </ul>
+              </nav>
+              <div class="header__basket"><a class="basket-block"><i class="fa fa-shopping-cart"></i><span class="basket-block__text">Корзина</span><span class="basket-block__count">[5]</span></a></div>
+              <div class="header__phone">
+                <div class="phone"><a class="phone__link" href="tel:+78007071850">8-800-707-18-50</a></div>
+                <div class="header__call call"><a class="call__link" href="#" data-remodal-target="order-call"><i class="fa fa-phone"></i>Заказать звонок</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="order-call">
+      <div class="remodal order-call__block" data-remodal-id="order-call">
+        <button class="remodal-close close-link" data-remodal-action="close"></button><span class="order-call__title">Заказать звонок</span>
+        <form class="order-call__form">
+          <div class="basket-form__row">
+            <div class="basket-form__block">
+              <label class="basket-form__label" for="name">Имя и Фамилия</label>
+              <input class="basket-form__input" type="text" name="name" id="name" placeholder="Иван Иванов">
+            </div>
+            <div class="basket-form__block">
+              <label class="basket-form__label" for="phone">Номер телефона</label>
+              <input class="basket-form__input" type="text" name="phone" id="phone" placeholder="+7 (___) ___-__-__">
+            </div>
+          </div>
+          <div class="check" id="#check">
+            <input class="check__input" type="checkbox" name="check" id="check" required>
+            <label class="check__label" for="check">Нажимая на кнопку «Отправить», я даю <span class="check__link" data-remodal-target="politic">согласие на обработку персональных данных</span></label>
+          </div>
+          <input class="order-call__submit js-check" type="submit" name="submit" id="submit" data-remodal-target="thanks-order">
+        </form>
+      </div>
+      <div class="remodal order-call__block" data-remodal-id="thanks-order">
+        <button class="remodal-close close-link" data-remodal-action="close"></button><span class="order-call__title">Спасибо!</span>
+        <p class="order-call__text">Наш менеджер свяжется с Вами в самое ближайшее время</p>
+      </div>
+    </div>
+    <!-- Конец секции header-->
+    <!-- Начало секции test-->
+    <div class="test">
+      <div class="container">
+        <div class="test__display">
+          <div class="test__list">
+            <div class="test__item test__item--active"><span class="test__title test__title--mb">Пройдите тест за 1 минуту и узнайте стоимость обогревателей<br>и их расход электричества в месяц</span><span class="test__subtitle">1. Для каких помещений необходимы обогреватели:</span>
+              <div class="test__row">
+                <div class="test__row-block">
+                  <input class="test__radio" type="radio" id="point1--1" name="point1" checked>
+                  <label class="test__label" for="point1--1">Дом</label>
+                </div>
+                <div class="test__row-block">
+                  <input class="test__radio" type="radio" id="point1--2" name="point1">
+                  <label class="test__label" for="point1--2">Квартира</label>
+                </div>
+                <div class="test__row-block">
+                  <input class="test__radio" type="radio" id="point1--3" name="point1">
+                  <label class="test__label" for="point1--3">Офис</label>
+                </div>
+                <div class="test__row-block">
+                  <input class="test__radio" type="radio" id="point1--4" name="point1">
+                  <label class="test__label" for="point1--4">Промышленные помещения</label>
+                </div>
+                <div class="test__row-block">
+                  <input class="test__radio" type="radio" id="point1--5" name="point1">
+                  <label class="test__label" for="point1--5">Другие помещения</label>
+                </div>
+              </div><span class="test__title">Текущий бонус : <span class="test__num">200 </span>руб.</span>
+              <div class="test__controls">
+                <div class="test__btn test__btn--next link--fill">Следующий вопрос<i class="fa fa-arrow-right"></i></div>
+              </div>
+            </div>
+            <div class="test__item"><span class="test__subtitle">2. Высота потолков:</span>
+              <div class="test__row">
+                <div class="test__row-block">
+                  <input class="test__radio" type="radio" id="point2--1" name="point2" checked>
+                  <label class="test__label" for="point2--1">до 2 м</label>
+                </div>
+                <div class="test__row-block">
+                  <input class="test__radio" type="radio" id="point2--2" name="point2">
+                  <label class="test__label" for="point2--2">от 2 м до 2,5 м</label>
+                </div>
+                <div class="test__row-block">
+                  <input class="test__radio" type="radio" id="point2--3" name="point2">
+                  <label class="test__label" for="point2--3">от 2,5 м до 3 м</label>
+                </div>
+                <div class="test__row-block">
+                  <input class="test__radio" type="radio" id="point2--4" name="point2">
+                  <label class="test__label" for="point2--4">от 3 м и выше</label>
+                </div>
+              </div><span class="test__title">Текущий бонус : <span class="test__num">400 </span>руб.</span>
+              <div class="test__controls">
+                <div class="test__btn test__btn--prev link">
+                  <div class="link--helper"></div><i class="fa fa-arrow-left"></i><span>Предыдущий вопрос</span>
+                </div>
+                <div class="test__btn test__btn--next link--fill">Следующий вопрос<i class="fa fa-arrow-right"></i></div>
+              </div>
+            </div>
+            <div class="test__item"><span class="test__subtitle">3. Какая общая площадь помещений, которые необходимо обогреть:</span>
+              <div class="test__row test__row--ai">
+                <div class="test__range-text">10м<span class="test__range--sup">2</span></div>
+                <input class="test__range" type="range" id="range" name="range" min="10" max="350">
+                <div class="test__range-text">350м<span class="test__range--sup">2</span></div>
+                <div class="test__range-now now"><span class="now-num">180 </span><span class="now-text">м<span class="test__range--sup">2</span></span></div>
+              </div><span class="test__title">Текущий бонус : <span class="test__num">400 </span>руб.</span>
+              <div class="test__controls">
+                <div class="test__btn test__btn--prev link">
+                  <div class="link--helper"></div><i class="fa fa-arrow-left"></i><span>Предыдущий вопрос</span>
+                </div>
+                <div class="test__btn test__btn--next link--fill">Следующий вопрос<i class="fa fa-arrow-right"></i></div>
+              </div>
+            </div>
+            <div class="test__item"><span class="test__subtitle">4. Выберите понравившиеся варианты внешнего вида:</span>
+              <div class="test__roll">
+                <div class="test__roll-item">
+                  <input class="test__radio" type="checkbox" id="point3--1" name="point3" checked>
+                  <label class="test__checked-label" for="point3--1"><img class="test__img" src="app/img/test/test__1.jpg" alt="Фото обогревателя"><span>Конвектор S700</span>
+                    <p>корпус - белый металл<br>лицевая сторона - черный металл</p>
+                  </label>
+                </div>
+                <div class="test__roll-item">
+                  <input class="test__radio" type="checkbox" id="point3--2" name="point3">
+                  <label class="test__checked-label" for="point3--2"><img class="test__img" src="app/img/test/test__2.jpg" alt="Фото обогревателя"><span>Конвектор W700</span>
+                    <p>корпус - белый металл<br>лицевая сторона - белый металл</p>
+                  </label>
+                </div>
+                <div class="test__roll-item">
+                  <input class="test__radio" type="checkbox" id="point3--3" name="point3">
+                  <label class="test__checked-label" for="point3--3"><img class="test__img" src="app/img/test/test__3.jpg" alt="Фото обогревателя"><span>Конвектор S701</span>
+                    <p>корпус - белый металл<br>лицевая сторона - белый металл</p>
+                  </label>
+                </div>
+                <div class="test__roll-item">
+                  <input class="test__radio" type="checkbox" id="point3--4" name="point3">
+                  <label class="test__checked-label" for="point3--4"><img class="test__img" src="app/img/test/test__4.jpg" alt="Фото обогревателя"><span>Конвектор S702</span>
+                    <p>корпус - нержавеющая сталь <br>лицевая сторона - черное стекло</p>
+                  </label>
+                </div>
+                <div class="test__roll-item">
+                  <input class="test__radio" type="checkbox" id="point3--5" name="point3">
+                  <label class="test__checked-label" for="point3--5"><img class="test__img" src="app/img/test/test__5.jpg" alt="Фото обогревателя"><span>Потолочный обогреватель</span>
+                    <p>корпус - белый металл</p>
+                  </label>
+                </div>
+                <div class="test__roll-item">
+                  <input class="test__radio" type="checkbox" id="point3--6" name="point3">
+                  <label class="test__checked-label" for="point3--6"><img class="test__img" src="app/img/test/test__6.jpg" alt="Фото обогревателя"><span>Греющая панель</span>
+                    <p>корпус - белый металл</p>
+                  </label>
+                </div>
+              </div><span class="test__title">Текущий бонус : <span class="test__num">400 </span>руб.</span>
+              <div class="test__controls">
+                <div class="test__btn test__btn--prev link">
+                  <div class="link--helper"></div><i class="fa fa-arrow-left"></i><span>Предыдущий вопрос</span>
+                </div>
+                <div class="test__btn test__btn--next link--fill">Следующий вопрос<i class="fa fa-arrow-right"></i></div>
+              </div>
+            </div>
+            <div class="test__item"><span class="test__subtitle">4. Выберите понравившиеся варианты внешнего вида:</span>
+              <div class="test__city">
+                <label class="test__text-label" for="city">Ваш город</label>
+                <input class="test__input" type="text" name="city" id="city" placeholder="Махачкала">
+              </div><span class="test__title">Текущий бонус : <span class="test__num">400 </span>руб.</span>
+              <div class="test__controls">
+                <div class="test__btn test__btn--prev link">
+                  <div class="link--helper"></div><i class="fa fa-arrow-left"></i><span>Предыдущий вопрос</span>
+                </div>
+                <div class="test__btn test__btn--next link--fill">Следующий вопрос<i class="fa fa-arrow-right"></i></div>
+              </div>
+            </div>
+            <div class="test__item"><span class="test__subtitle">6. Желаемые сроки приобретения обогревателей:</span>
+              <div class="test__row">
+                <div class="test__row-block">
+                  <input class="test__radio" type="radio" id="point4--1" name="point4" checked>
+                  <label class="test__label" for="point4--1">В ближайшее время</label>
+                </div>
+                <div class="test__row-block">
+                  <input class="test__radio" type="radio" id="point4--2" name="point4">
+                  <label class="test__label" for="point4--2">В течение 2 недель</label>
+                </div>
+                <div class="test__row-block">
+                  <input class="test__radio" type="radio" id="point4--3" name="point4">
+                  <label class="test__label" for="point4--3">В течение месяца</label>
+                </div>
+                <div class="test__row-block">
+                  <input class="test__radio" type="radio" id="point4--4" name="point4">
+                  <label class="test__label" for="point4--4">К концу осени 2017</label>
+                </div>
+                <div class="test__row-block">
+                  <input class="test__radio" type="radio" id="point4--5" name="point4">
+                  <label class="test__label" for="point4--5">Другое</label>
+                </div>
+              </div><span class="test__title">Текущий бонус : <span class="test__num">400 </span>руб.</span>
+              <div class="test__controls">
+                <div class="test__btn test__btn--prev link">
+                  <div class="link--helper"></div><i class="fa fa-arrow-left"></i><span>Предыдущий вопрос</span>
+                </div>
+                <div class="test__btn test__btn--next link--fill">Следующий вопрос<i class="fa fa-arrow-right"></i></div>
+              </div>
+            </div>
+            <div class="test__item"><span class="test__title">Благодарим за ответы!</span>
+              <div class="test__info"><span class="test__info-text">Ваша скидка</span><span class="test__info-num">1200p.</span><span class="test__info-text">действует в течение 4 часов!*</span><span class="test__subinfo">*действительна только для тех клиентов, которые оставили заявку в форме ниже</span></div>
+              <div class="test__order">
+                <div class="basket-form__row">
+                  <div class="basket-form__block">
+                    <label class="basket-form__label" for="name">Имя и Фамилия</label>
+                    <input class="basket-form__input" type="text" name="name" id="name" placeholder="Иван Иванов">
+                  </div>
+                  <div class="basket-form__block">
+                    <label class="basket-form__label" for="phone">Номер телефона</label>
+                    <input class="basket-form__input" type="text" name="phone" id="phone" placeholder="+7 (___) ___-__-__">
+                  </div>
+                  <div class="basket-form__block">
+                    <label class="basket-form__label" for="mail">Электронная почта</label>
+                    <input class="basket-form__input" type="text" name="mail" id="mail" placeholder="ivanov@mail.ru">
+                  </div>
+                </div>
+              </div>
+              <div class="test__check">
+                <div class="check" id="#check">
+                  <input class="check__input" type="checkbox" name="check" id="check" required>
+                  <label class="check__label" for="check">Нажимая на кнопку «Отправить», я даю <span class="check__link" data-remodal-target="politic">согласие на обработку персональных данных</span></label>
+                </div>
+              </div>
+              <div class="test__controls">
+                <div class="test__btn link--fill test__btn--last js-check"><i class="fa fa-calculator"></i>Получить расчёт</div>
+              </div><span class="test__title">Получите</span>
+              <div class="test__row test__row--last">
+                <div class="test__block">
+                  <svg class="icon icon__price-tag" role="img">
+                    <use xlink:href="app/img/sprite/sprite.svg#price-tag"></use>
+                  </svg><span class="test__subtitle">Стоимость обогревателей для Вас</span>
+                </div>
+                <div class="test__block">
+                  <svg class="icon icon__invoice" role="img">
+                    <use xlink:href="app/img/sprite/sprite.svg#invoice"></use>
+                  </svg><span class="test__subtitle">Расчёт расходов на электричество в месяц</span>
+                </div>
+                <div class="test__block">
+                  <svg class="icon icon__shapes" role="img">
+                    <use xlink:href="app/img/sprite/sprite.svg#shapes"></use>
+                  </svg><span class="test__subtitle">Каталог обогревателей и галерею фотографий</span>
+                </div>
+                <div class="test__block">
+                  <svg class="icon icon__gift" role="img">
+                    <use xlink:href="app/img/sprite/sprite.svg#gift"></use>
+                  </svg><span class="test__subtitle test__subtitle--bold">Подарок</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Конец секции test-->
+  </body>
+</html>

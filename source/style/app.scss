@@ -1,0 +1,194 @@
+// Подключение файлов SCSS
+
+// Основные файлы
+
+// Миксины
+@import 'base/mixin';
+
+// Переменные
+@import 'base/var';
+
+/* ШРИФТЫ */
+@import 'base/fonts';
+
+/* Настройки */
+@import 'base/base';
+
+
+
+// Компоненты
+
+
+// Секции
+
+/* Стили секции header */
+@import 'section/header';
+/* Конец стилей header */
+
+/* Стили секции footer */
+@import 'section/footer';
+/* Конец стилей footer */
+
+/* Стили секции promo */
+@import 'section/promo';
+/* Конец стилей promo */
+
+/* Стили секции catalog */
+@import 'section/catalog';
+/* Конец стилей catalog */
+
+/* Стили секции company */
+@import 'section/company';
+/* Конец стилей company */
+
+/* Стили секции compare */
+@import 'section/compare';
+/* Конец стилей compare */
+
+/* Стили секции term */
+@import 'section/term';
+/* Конец стилей term */
+
+/* Стили секции stock */
+@import 'section/stock';
+/* Конец стилей stock */
+
+/* Стили секции contacts */
+@import 'section/contacts';
+/* Конец стилей contacts */
+
+/* Стили секции technology */
+@import 'section/technology';
+/* Конец стилей technology */
+
+/* Стили секции basket */
+@import 'section/basket';
+/* Конец стилей basket */
+
+/* Стили секции card */
+@import 'section/card';
+/* Конец стилей card */
+
+/* Стили секции montage */
+@import 'section/montage';
+/* Конец стилей montage */
+
+/* Стили секции delivery */
+@import 'section/delivery';
+/* Конец стилей delivery */
+
+/* Стили секции coop */
+@import 'section/coop';
+/* Конец стилей coop */
+
+/* Стили секции heating */
+@import 'section/heating';
+/* Конец стилей heating */
+
+/* Стили секции error */
+@import 'section/error';
+/* Конец стилей error */
+
+/* Стили секции test */
+@import 'section/test';
+/* Конец стилей test */
+
+
+
+// Блоки
+
+/* Стили блока menu */
+@import 'common/menu';
+/* Конец стилей menu */
+
+/* Стили блока phone */
+@import 'common/phone';
+/* Конец стилей phone */
+
+/* Стили блока basket-block */
+@import 'common/basket-block';
+/* Конец стилей basket-block */
+
+/* Стили блока call */
+@import 'common/call';
+/* Конец стилей call */
+
+/* Стили блока main-slider */
+@import 'common/main-slider';
+/* Конец стилей main-slider */
+
+/* Стили блока social */
+@import 'common/social';
+/* Конец стилей social */
+
+/* Стили блока subscribe */
+@import 'common/subscribe';
+/* Конец стилей subscribe */
+
+/* Стили блока privacy */
+@import 'common/privacy';
+/* Конец стилей privacy */
+
+/* Стили блока breadcrumbs */
+@import 'common/breadcrumbs';
+/* Конец стилей breadcrumbs */
+
+/* Стили блока certificate */
+@import 'common/certificate';
+/* Конец стилей certificate */
+
+/* Стили блока diagram */
+@import 'common/diagram';
+/* Конец стилей diagram */
+
+/* Стили блока object */
+@import 'common/object';
+/* Конец стилей object */
+
+/* Стили блока counter */
+@import 'common/counter';
+/* Конец стилей counter */
+
+/* Стили блока basket-form */
+@import 'common/basket-form';
+/* Конец стилей basket-form */
+
+/* Стили блока card-tabs */
+@import 'common/card-tabs';
+/* Конец стилей card-tabs */
+
+/* Стили блока card-slider */
+@import 'common/card-slider';
+/* Конец стилей card-slider */
+
+/* Стили блока order-call */
+@import 'common/order-call';
+/* Конец стилей order-call */
+
+/* Стили блока call-me */
+@import 'common/call-me';
+/* Конец стилей call-me */
+
+/* Стили блока basket-in */
+@import 'common/basket-in';
+/* Конец стилей basket-in */
+
+/* Стили блока card-paydel */
+@import 'common/card-paydel';
+/* Конец стилей card-paydel */
+
+/* Стили блока politic */
+@import 'common/politic';
+/* Конец стилей politic */
+
+/* Стили блока check */
+@import 'common/check';
+/* Конец стилей check */
+
+
+// Библиотеки
+
+
+/* Стили библиотеки remodal */
+@import 'libs/remodal';
+/* Конец библиотеки remodal */

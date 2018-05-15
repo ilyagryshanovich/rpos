@@ -1,0 +1,126 @@
+.card-tabs {
+	margin-bottom: 50px;
+	@media (max-width: 960px) {
+		margin-bottom: 30px;
+	}
+}
+
+.card-tabs__controls {
+	display: flex;
+	margin-bottom: 40px;
+	@media (max-width: 960px) {
+		margin-bottom: 20px;
+	}
+	@media (max-width: 700px) {
+		flex-direction: column;
+	}
+}
+.card-tabs__control {
+	padding: 15px 25px;
+	font-size: 16px;
+	border-radius: 50px;
+	border: 3px solid #d9d9d9;
+	margin-right: 25px;
+	cursor: pointer;
+	@extend .trs;
+	&:last-child {
+		margin-right: 0;
+	}
+	&:hover {
+		border-color: $accentColor;
+	}
+	@media (max-width: 960px) {
+		font-size: 14px;
+		padding: 10px 20px;
+	}
+	@media (max-width: 700px) {
+		margin-right: 0;
+		margin-bottom: 10px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.card-tabs__control--active {
+	border-color: $accentColor;
+	font-family: $mediumFont;
+}
+
+.card-tabs__list {
+	position: relative;
+	height: 580px;
+	border-bottom: 1px solid black;
+	@media (max-width: 480px) {
+		height: 750px;
+	}
+}
+.card-tabs__item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	@extend .trs;
+}
+.card-tabs__item--active {
+	opacity: 1;
+}
+.card-tabs__title {
+	font-size: 18px;
+	font-family: $mediumFont;
+	margin-bottom: 20px;
+	margin-top: 40px;
+	&:first-child {
+		margin-top: 0;
+	}
+	@media (max-width: 960px) {
+		font-size: 16px;
+		margin-bottom: 15px;
+		margin-top: 30px;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+}
+
+.card-tabs__row {
+	display: flex;
+	margin-bottom: 15px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	@media (max-width: 480px) {
+		flex-direction: column;
+	}
+}
+
+.card-tabs__subrow {
+	display: flex;
+	width: 360px;
+	margin-right: 15px;
+	@media (max-width: 960px) {
+		width: 300px;
+	}
+	@media (max-width: 480px) {
+		flex-direction: column;
+		width: 100%;
+	}
+}
+
+.card-tabs__name {
+	display: block;
+	white-space: nowrap;
+	margin-right: 15px;
+}
+
+.card-tabs__dots {
+	width: 100%;
+	background: url(../img/card/dots.png) center bottom repeat-x;
+	@media (max-width: 480px) {
+		height: 8px;
+	}
+}
+
+.card-tabs__name, .card-tabs__info {
+	font-size: 14px;
+}

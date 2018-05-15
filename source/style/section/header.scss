@@ -1,0 +1,153 @@
+.header {
+	position: relative;
+	background: #262626;
+	padding: 20px 0;
+	z-index: 999;
+	@media (max-width: 980px) {
+		.container {
+			padding: 0 5px;
+		}
+	}
+	@media (max-width: 960px) {
+		.container {
+			padding: 0 10px;
+		}
+	}
+}
+
+.header__slider {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.header__top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	z-index: 5;
+}
+
+.header__logo {
+	width: 208px;
+	img {
+		min-width: 150px;
+	}
+	@media (max-width: 1200px) {
+		width: 150px;
+	}
+}
+
+.header__list {
+	display: flex;
+	flex-wrap: wrap;
+	@extend .trs;
+	@media (max-width: 960px) {
+		justify-content: center;
+	}
+	@media (max-width: 700px) {
+		display: none;
+		position: absolute;
+		left: -10px;
+		right: -10px;
+	}
+}
+
+.header__basket {
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	@media (max-width: 700px) {
+		background: #262626;
+		padding: 20px 10px;
+	}
+}
+
+.header__phone {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	@media (max-width: 700px) {
+		width: 100%;
+		align-items: flex-start;
+		padding: 20px;
+		background: #262626;
+	}
+}
+
+
+
+// btn
+
+.header__btn {
+	align-items: center;
+	cursor: pointer;
+	display: none;
+	&:hover {
+		.header__btn-text {
+			color: $accentColor;
+		}
+	}
+	@media (max-width: 700px) {
+		display: flex;
+	}
+}
+
+.header__btn-text {
+	font-size: 18px;
+	color: white;
+	display: block;
+	margin-right: 5px;
+	@extend .trs;
+}
+
+.header__btn-humburger {
+	width: 40px;
+	height: 40px;
+	border: 3px solid $accentColor;
+	border-radius: 50%;
+	display: flex;
+	span {
+		display: block;
+		width: 16px;
+		height: 3px;
+		background: $accentColor;
+		position: relative;
+		margin: auto;
+		@extend .trs;
+		&:before, &:after {
+			content: "";
+			display: block;
+			width: 16px;
+			height: 3px;
+			background: $accentColor;
+			position: absolute;
+			top: 0;
+			left: 0;
+			@extend .trs;
+		}
+		&:before {
+			transform: translateY(-7px);
+		}
+		&:after {
+			transform: translateY(7px);
+		}
+	}
+}
+.header__btn--active {
+	.header__btn-humburger {
+		span {
+			transform: rotate(45deg);
+			&:before {
+				opacity: 0;
+			}
+			&:after {
+				transform: rotate(90deg);
+			}
+		}
+	}
+}

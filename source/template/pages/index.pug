@@ -1,0 +1,21 @@
+extends ../_main
+
+block variables
+  - var title = 'Главная'
+  - var url_js = "app/js/app.js"
+  - var url_css = "app/css/app.css"
+
+block content
+  // Начало секции header
+  include ../section/_header
+  // Конец секции header
+  // Начало секции main-slider
+  include ../section/_main-slider
+  // Конец секции main-slider
+  .index-promo
+    // Начало секции promo
+    include ../section/_promo
+    // Конец секции promo
+  // Начало секции footer
+  include ../section/_footer
+  // Конец секции footer

@@ -1,0 +1,127 @@
+.heating {
+	padding-top: 25px;
+	@media (max-width: 960px) {
+		padding-top: 15px;
+	}
+}
+
+.heating__breadcrumbs {
+	margin-bottom: 30px;
+	@media (max-width: 960px) {
+		margin-bottom: 20px;
+	}
+}
+
+.heating__banner {
+	background: url(../img/heating/heating__banner.jpg) center center no-repeat;
+	background-size: cover;
+	padding: 90px 0;
+	margin-bottom: 50px;
+	position: relative;
+	.icon {
+		width: 60px;
+		height: 60px;
+		margin-right: 20px;
+		fill: $accentColor;
+	}
+	@media (max-width: 960px) {
+		padding: 70px 0;
+		margin-bottom: 30px;
+	}
+}
+
+.heating__wrap {
+	display: flex;
+	position: relative;
+	align-items: center;
+	z-index: 2;
+}
+
+.heating__title {
+	font-size: 30px;
+	font-family: $boldFont;
+	@media (max-width: 960px) {
+		font-size: 24px;
+	}
+}
+
+.heating__subtitle {
+	display: block;
+	font-size: 16px;
+	font-family: $boldFont;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 2px dotted black;
+	&:after {
+		content: "";
+		display: none;
+		width: 18px;
+		height: 13px;
+		background: url(../img/arrow-right--small.png) center center no-repeat;
+		background-size: cover;
+		margin-left: 10px;
+		transform: rotate(-90deg);
+		@extend .trs;
+	}
+	@media (max-width: 700px) {
+		font-size: 20px;
+		display: flex;
+		justify-content: center;
+		cursor: pointer;
+		&:after {
+			display: block;
+		}
+	}
+	@media (max-width: 480px) {
+		font-size: 16px;
+	}
+}
+
+.heating__subtitle--active {
+	&:after {
+		transform: rotate(90deg);
+	}
+}
+
+.heating__wrapper {
+	display: flex;
+	justify-content: space-between;
+	@media (max-width: 700px) {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.heating__menu {
+	min-width: 235px;
+	margin-right: 25px;
+	.footer__item--active {
+		padding: 0 20px;
+		border: 3px solid $accentColor;
+		border-radius: 30px;
+		text-align: center;
+		margin: 10px 0;
+		.footer__link {
+			opacity: 1;
+			cursor: default;
+		}
+	}
+	@media (max-width: 700px) {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 40px;
+		margin-right: 0;
+		.footer__list {
+			display: none;
+		}
+	}
+}
+
+.heating__row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	@media (max-width: 1200px) {
+		justify-content: center;
+	}
+}
